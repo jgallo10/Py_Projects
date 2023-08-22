@@ -62,7 +62,6 @@ word_list = ["aardvark", "baboon", "camel"]
 word = random.choice(word_list)
 word_len = len(word)
 lives = 6
-print(word)
 
 #loop to create empty list 
 player_list = []

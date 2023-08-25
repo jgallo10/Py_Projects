@@ -7,22 +7,16 @@ text = input("Type your message: \n").lower()
 shift = int(input("Type the shift number: \n"))
 
 
-
 def ceaser(begin_text, amount_shifted, which_cipher):
     final_text = ""
     alphabet_length = len(alphabet)
     if which_cipher == "decode":
-            amount_shifted *= -1
-            
+            amount_shifted *= -1        
     for letter in begin_text:
-
-        letter_index = alphabet.index(letter) + amount_shifted
-        
+        letter_index = alphabet.index(letter) + amount_shifted  
         if letter_index > alphabet_length or letter_index < 0:
-            letter_index = letter_index % alphabet_length
-        
+            letter_index = letter_index % alphabet_length  
         final_text += alphabet[letter_index]
-        
     print(f"The final text is {final_text} \n")
         
         
